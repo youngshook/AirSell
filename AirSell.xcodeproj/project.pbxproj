@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B584471F190E7F17009F8E2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B584471E190E7F17009F8E2A /* Main.storyboard */; };
 		B5C2623C190E67B700F52A56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C2623B190E67B700F52A56 /* Foundation.framework */; };
 		B5C2623E190E67B700F52A56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C2623D190E67B700F52A56 /* CoreGraphics.framework */; };
 		B5C26240190E67B700F52A56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C2623F190E67B700F52A56 /* UIKit.framework */; };
@@ -19,6 +20,13 @@
 		B5C26257190E67B700F52A56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C2623F190E67B700F52A56 /* UIKit.framework */; };
 		B5C2625F190E67B700F52A56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5C2625D190E67B700F52A56 /* InfoPlist.strings */; };
 		B5C26261190E67B700F52A56 /* AirSellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C26260190E67B700F52A56 /* AirSellTests.m */; };
+		B5C2626D190E681200F52A56 /* ASPaperCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C2626C190E681200F52A56 /* ASPaperCollectionViewController.m */; };
+		B5C26273190E734500F52A56 /* ASTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C26270190E734500F52A56 /* ASTransitionController.m */; };
+		B5C26274190E734500F52A56 /* ASTransitionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C26272190E734500F52A56 /* ASTransitionLayout.m */; };
+		B5C2627A190E745C00F52A56 /* ASCollectionViewLargeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C26277190E745C00F52A56 /* ASCollectionViewLargeLayout.m */; };
+		B5C2627B190E745C00F52A56 /* ASCollectionViewSmallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C26279190E745C00F52A56 /* ASCollectionViewSmallLayout.m */; };
+		B5C26280190E74D900F52A56 /* ASSmallCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C2627D190E74D900F52A56 /* ASSmallCollectionViewController.m */; };
+		B5C26281190E74D900F52A56 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C2627F190E74D900F52A56 /* ASViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B584471E190E7F17009F8E2A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B5C26238190E67B700F52A56 /* AirSell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirSell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C2623B190E67B700F52A56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B5C2623D190E67B700F52A56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +57,21 @@
 		B5C2625C190E67B700F52A56 /* AirSellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirSellTests-Info.plist"; sourceTree = "<group>"; };
 		B5C2625E190E67B700F52A56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5C26260190E67B700F52A56 /* AirSellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirSellTests.m; sourceTree = "<group>"; };
+		B5C2626B190E681200F52A56 /* ASPaperCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPaperCollectionViewController.h; sourceTree = "<group>"; };
+		B5C2626C190E681200F52A56 /* ASPaperCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPaperCollectionViewController.m; sourceTree = "<group>"; };
+		B5C2626F190E734500F52A56 /* ASTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTransitionController.h; sourceTree = "<group>"; };
+		B5C26270190E734500F52A56 /* ASTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTransitionController.m; sourceTree = "<group>"; };
+		B5C26271190E734500F52A56 /* ASTransitionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTransitionLayout.h; sourceTree = "<group>"; };
+		B5C26272190E734500F52A56 /* ASTransitionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTransitionLayout.m; sourceTree = "<group>"; };
+		B5C26276190E745C00F52A56 /* ASCollectionViewLargeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCollectionViewLargeLayout.h; sourceTree = "<group>"; };
+		B5C26277190E745C00F52A56 /* ASCollectionViewLargeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCollectionViewLargeLayout.m; sourceTree = "<group>"; };
+		B5C26278190E745C00F52A56 /* ASCollectionViewSmallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCollectionViewSmallLayout.h; sourceTree = "<group>"; };
+		B5C26279190E745C00F52A56 /* ASCollectionViewSmallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCollectionViewSmallLayout.m; sourceTree = "<group>"; };
+		B5C2627C190E74D900F52A56 /* ASSmallCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSmallCollectionViewController.h; sourceTree = "<group>"; };
+		B5C2627D190E74D900F52A56 /* ASSmallCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSmallCollectionViewController.m; sourceTree = "<group>"; };
+		B5C2627E190E74D900F52A56 /* ASViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASViewController.h; sourceTree = "<group>"; };
+		B5C2627F190E74D900F52A56 /* ASViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
+		B5C26282190E755B00F52A56 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +131,17 @@
 		B5C26241190E67B700F52A56 /* AirSell */ = {
 			isa = PBXGroup;
 			children = (
+				B5C26282190E755B00F52A56 /* CommonDefine.h */,
+				B584471E190E7F17009F8E2A /* Main.storyboard */,
 				B5C2624A190E67B700F52A56 /* ASAppDelegate.h */,
 				B5C2624B190E67B700F52A56 /* ASAppDelegate.m */,
+				B5C2627E190E74D900F52A56 /* ASViewController.h */,
+				B5C2627F190E74D900F52A56 /* ASViewController.m */,
+				B5C2627C190E74D900F52A56 /* ASSmallCollectionViewController.h */,
+				B5C2627D190E74D900F52A56 /* ASSmallCollectionViewController.m */,
+				B5C26275190E744E00F52A56 /* Custom Layout */,
+				B5C2626E190E684300F52A56 /* Transition */,
+				B5C2626A190E67D200F52A56 /* Base Colection */,
 				B5C2624D190E67B700F52A56 /* Images.xcassets */,
 				B5C26242190E67B700F52A56 /* Supporting Files */,
 			);
@@ -142,6 +175,37 @@
 				B5C2625D190E67B700F52A56 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5C2626A190E67D200F52A56 /* Base Colection */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2626B190E681200F52A56 /* ASPaperCollectionViewController.h */,
+				B5C2626C190E681200F52A56 /* ASPaperCollectionViewController.m */,
+			);
+			name = "Base Colection";
+			sourceTree = "<group>";
+		};
+		B5C2626E190E684300F52A56 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2626F190E734500F52A56 /* ASTransitionController.h */,
+				B5C26270190E734500F52A56 /* ASTransitionController.m */,
+				B5C26271190E734500F52A56 /* ASTransitionLayout.h */,
+				B5C26272190E734500F52A56 /* ASTransitionLayout.m */,
+			);
+			name = Transition;
+			sourceTree = "<group>";
+		};
+		B5C26275190E744E00F52A56 /* Custom Layout */ = {
+			isa = PBXGroup;
+			children = (
+				B5C26276190E745C00F52A56 /* ASCollectionViewLargeLayout.h */,
+				B5C26277190E745C00F52A56 /* ASCollectionViewLargeLayout.m */,
+				B5C26278190E745C00F52A56 /* ASCollectionViewSmallLayout.h */,
+				B5C26279190E745C00F52A56 /* ASCollectionViewSmallLayout.m */,
+			);
+			name = "Custom Layout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B584471F190E7F17009F8E2A /* Main.storyboard in Resources */,
 				B5C26246190E67B700F52A56 /* InfoPlist.strings in Resources */,
 				B5C2624E190E67B700F52A56 /* Images.xcassets in Resources */,
 			);
@@ -241,7 +306,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C2624C190E67B700F52A56 /* ASAppDelegate.m in Sources */,
+				B5C2626D190E681200F52A56 /* ASPaperCollectionViewController.m in Sources */,
+				B5C2627B190E745C00F52A56 /* ASCollectionViewSmallLayout.m in Sources */,
+				B5C26281190E74D900F52A56 /* ASViewController.m in Sources */,
+				B5C26280190E74D900F52A56 /* ASSmallCollectionViewController.m in Sources */,
 				B5C26248190E67B700F52A56 /* main.m in Sources */,
+				B5C26274190E734500F52A56 /* ASTransitionLayout.m in Sources */,
+				B5C26273190E734500F52A56 /* ASTransitionController.m in Sources */,
+				B5C2627A190E745C00F52A56 /* ASCollectionViewLargeLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirSell/AirSell-Prefix.pch";
 				INFOPLIST_FILE = "AirSell/AirSell-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,6 +447,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirSell/AirSell-Prefix.pch";
 				INFOPLIST_FILE = "AirSell/AirSell-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,6 +512,7 @@
 				B5C26266190E67B700F52A56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5C26267190E67B700F52A56 /* Build configuration list for PBXNativeTarget "AirSellTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +521,7 @@
 				B5C26269190E67B700F52A56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
