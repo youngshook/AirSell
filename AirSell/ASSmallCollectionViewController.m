@@ -41,8 +41,7 @@
 {
     [super viewDidLoad];
     
-    //Gallery
-    _galleryImages = @[@"image1", @"image2", @"image3", @"image4" ,@"image5",@"image6",@"image7",@"image8",@"image9",@"image10"];
+    _galleryImages = @[@"pic1",@"pic2",@"pic3",@"pic4"];
     _slide = 0;
     
     
