@@ -9,7 +9,6 @@
 @import UIKit;
 
 @interface ASPaperCollectionViewController : UICollectionViewController
-
 - (UICollectionViewController*)nextViewControllerAtPoint:(CGPoint)point;
 
 @end

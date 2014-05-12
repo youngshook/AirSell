@@ -10,7 +10,6 @@
 #import "ASTransitionController.h"
 #import "ASCollectionViewSmallLayout.h"
 #import "ASSmallCollectionViewController.h"
-
 @interface ASAppDelegate () <UINavigationControllerDelegate, ASTransitionControllerDelegate>
 
 @property (nonatomic) UINavigationController *navigationController;
@@ -26,6 +25,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     ASCollectionViewSmallLayout *smallLayout = [[ASCollectionViewSmallLayout alloc] init];
     ASSmallCollectionViewController *collectionViewController = [[ASSmallCollectionViewController alloc] initWithCollectionViewLayout:smallLayout];
+    
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:collectionViewController];
     self.navigationController.delegate = self;
     self.navigationController.navigationBarHidden = YES;

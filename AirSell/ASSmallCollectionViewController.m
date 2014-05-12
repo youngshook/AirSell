@@ -8,7 +8,6 @@
 
 #import "ASSmallCollectionViewController.h"
 #import "ASCollectionViewLargeLayout.h"
-
 @interface ASSmallCollectionViewController ()
 
 @property (nonatomic, assign) NSInteger slide;
@@ -16,15 +15,25 @@
 @property (nonatomic, strong) UIImageView *bottomImage;
 @property (nonatomic, strong) UIImageView *reflected;
 @property (nonatomic, strong) NSArray *galleryImages;
-
+@property (nonatomic, strong) NSArray *homeBgArray;
+@property (nonatomic, strong) NSArray *urlsArray;
 @end
 
 @implementation ASSmallCollectionViewController
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController *vc = [self nextViewControllerAtPoint:CGPointZero];
-    [self.navigationController pushViewController:vc animated:YES];
+    if (indexPath.row > 7) {
+       [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:[_urlsArray objectAtIndex:indexPath.row - 8]]];
+        return;
+    }else{
+        UICollectionViewCell *cell =  [collectionView cellForItemAtIndexPath:indexPath];
+        UIImageView *imageview = (UIImageView *)cell.backgroundView;
+        [imageview setImage:[UIImage imageNamed:[self.homeBgArray objectAtIndex:indexPath.row]]];
+        imageview.contentMode = UIViewContentModeScaleAspectFit;
+        UIViewController *vc = [self nextViewControllerAtPoint:CGPointZero];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (UICollectionViewController *)nextViewControllerAtPoint:(CGPoint)point
@@ -32,18 +41,21 @@
     // We could have multiple section stacks and find the right one,
     ASCollectionViewLargeLayout *largeLayout = [[ASCollectionViewLargeLayout alloc] init];
     ASPaperCollectionViewController *nextCollectionViewController = [[ASPaperCollectionViewController alloc] initWithCollectionViewLayout:largeLayout];
-    
     nextCollectionViewController.useLayoutToLayoutNavigationTransitions = YES;
     return nextCollectionViewController;
 }
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    _galleryImages = @[@"pic1",@"pic2",@"pic3",@"pic4"];
-    _slide = 0;
+    _urlsArray = @[@"qpos://",@"miaopos://",@"qmmvip://",@"qianyuebao://"];
     
+    _homeBgArray = @[@"post_bg",@"orders_bg",@"manage_bg",@"stats_bg",@"myincome_bg",@"forum_bg",@"weixin_bg",@"promo_bg"];
+    
+    _galleryImages = @[@"pic1",@"pic2",@"pic3",@"pic4",@"pic5",@"pic6",@"pic7",@"pic8",@"pic9",@"pic10",@"pic11",@"pic12",@"pic13"];
+    _slide = 0;
     
     // Init mainView
     _mainView = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -79,6 +91,14 @@
     [gradientReflected setAffineTransform:CGAffineTransformMakeScale(1.0, -1.0)];
     [_reflected.layer insertSublayer:gradientReflected atIndex:0];
     
+    
+    UIImageView *notificationIcon  = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"notification"]];
+    notificationIcon.frame = CGRectMake(20, 170, 45, 45);
+    [_bottomImage addSubview:notificationIcon];
+    
+    UIImageView *settingsIcon  = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"settings"]];
+    settingsIcon.frame = CGRectMake(80, 170, 45, 45);
+    [_bottomImage addSubview:settingsIcon];
     
     // First Load
     [self changeSlide];

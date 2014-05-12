@@ -50,4 +50,5 @@
     return CGPointMake(proposedContentOffset.x + offsetAdjustment, proposedContentOffset.y);
 }
 
+
 @end
